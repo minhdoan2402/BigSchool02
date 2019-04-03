@@ -24,7 +24,7 @@ namespace BigSchool01.ViewModels
         public byte Category { get; set; }
         public IEnumerable<Category> Categories { get; set; }
 
-       
+       //dsfasdfasdf
        
 
         public DateTime GetDateTime()
