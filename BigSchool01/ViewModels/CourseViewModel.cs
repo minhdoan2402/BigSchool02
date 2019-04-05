@@ -14,11 +14,11 @@ namespace BigSchool01.ViewModels
         [Required(ErrorMessage = "Không Được Bỏ Trống")]
         [StringLength(250, ErrorMessage = " Không vượt qua 100 kí tự")]
         public string Place { get; set; }
-        [Required(ErrorMessage = "Không Được Bỏ Trống")]
-        [StringLength(250, ErrorMessage = " Không vượt qua 100 kí tự")]
+        [Required]
+        [FutureDate]
         public string Date { get; set; }
-        [Required(ErrorMessage = "Không Được Bỏ Trống")]
-        [StringLength(250, ErrorMessage = " Không vượt qua 100 kí tự")]
+        [Required]
+        [ValidTime]
         public string Time { get; set; }
         [Required]
         public byte Category { get; set; }
