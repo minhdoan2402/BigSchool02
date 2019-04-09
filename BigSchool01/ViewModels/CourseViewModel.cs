@@ -10,7 +10,7 @@ namespace BigSchool01.ViewModels
     public class CourseViewModel
     {
 
-
+        public int Id { get; set; }
         [Required(ErrorMessage = "Không Được Bỏ Trống")]
         [StringLength(250, ErrorMessage = " Không vượt qua 100 kí tự")]
         public string Place { get; set; }
@@ -25,7 +25,11 @@ namespace BigSchool01.ViewModels
         public IEnumerable<Category> Categories { get; set; }
 
        //dsfasdfasdf
-       
+        public string Heading { get; set; }
+        public string Action
+        {
+            get { return (Id != 0) ? "Update" : "Create"; }
+        }
 
         public DateTime GetDateTime()
         {
