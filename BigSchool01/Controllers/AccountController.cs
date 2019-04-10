@@ -19,7 +19,7 @@ namespace BigSchool01.Controllers
         private ApplicationUserManager _userManager;
 
         public AccountController()
-        {
+        {// ghi chu
         }
 
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
